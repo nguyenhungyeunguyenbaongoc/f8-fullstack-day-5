@@ -1,7 +1,8 @@
+/* CV */
 * {
     box-sizing: border-box;
 }
-body {
+#main {
     background-color: grey;
 }
 /* Container */
@@ -32,16 +33,16 @@ body {
     font-weight: bold;
 }
 /* Content */
-p {
+.CV p {
     font-size: 12px;
 }
-ul {
+.CV ul {
     list-style: disc;
     display: block;
     line-height: 15px;
     font-size: 12px;
 }
-h2 {
+.CV h2 {
     margin-right: 4px;
 }
 ::marker {
@@ -74,3 +75,59 @@ h2 {
 #footer span {
     font-weight: normal;
 }
+/* MENU */
+body {
+    background-image: url(https://wallpapers.com/images/featured/blue-color-background-9u7nhq72leu6xf5w.jpg);
+}
+.nav ul {
+    font-size: 0px;
+    background-color: #3e5cca;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li a {
+    display: inline-block;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+}
+.home {
+    background: white;
+    color: black !important;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+.nav ul li a:hover {
+    color: black;
+    background: white;
+}
+
+#submenu {
+    display: none;
+    background: white;
+    color: black;
+}
+
+#submenu li {
+    border-bottom: 2px solid grey;
+}
+
+#submenu li a {
+    color: black;
+    padding: 20px 20px;
+}
+
+.dropdown:hover #submenu {
+    display: block;
+    position: absolute;
+}
+#item-list {
+    border-top: 2px solid grey;
+}
+/* Form */
