@@ -5,36 +5,67 @@
         <link rel="stylesheet" href="./css/style.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Form</title>
+        <title>Register</title>
     </head>
-    <body>
-        <div class="form">
-            <label for="name">Display Name</label>
-            <input type="text" / id="name">
-            <label for="email">Email</label>
-            <input type="email" / id="email">
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" / id="phone-number">
-            <label for="password">Password</label>
-            <input type="password" id="password"/>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" / id="confirm-password">
-            <label for="">Gender</label>
-            <input type="radio" name="gender"/>
-            <label for=""></label>
-            <input type="radio" name="gender"/>
-            <label for=""></label>
-            <input type="radio" name="gender"/>
-            <label for="date-of-birth">Date of Birth</label>
-            <input type="date" name="" id="date-of-birth">
-            <label for="">Address</label>
-            <input type="text" />
-            <label for="">Profile Picture</label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for="">Communication Preferences</label>
-            <input type="text" />
-        </div>
+    <body id="register-body">
+        <form action="" class="form-register" autocomplete="off" spellcheck="false">
+            <h1 id="form-header">REGISTER</h1>
+            <div class="form-group">
+                <label for="name" class="label-form">Display Name</label>
+                <input type="text" id="name" placeholder="Name..." required/>
+                <label for="email" class="label-form">Email</label>
+                <input type="email" id="email" placeholder="Email..." required/>
+                <label for="phone-number" class="label-form">Phone Number</label>
+                <input type="tel" id="phone-number" placeholder="Phone number..." required/>
+                <label for="password" class="label-form">Password</label>
+                <input type="password" id="password" placeholder="Password..." required/>
+                <label for="confirm-password" class="label-form">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password..." required/>
+            </div>
+            <div class="form-group">
+                <label class="label-form">Gender</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" required/>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" required/>
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth" class="label-form">Date of Birth</label>
+                <input type="date" name="" id="date-of-birth" required/>
+            </div>
+            <div class="form-group">
+                <label for="address" class="label-form">Address</label>
+                <input type="text" id="address" placeholder="Address..." required/>
+            </div>
+            <div class="form-group">
+                <label for="img" class="label-form">
+                    Profile Picture
+                    <img
+                        src="data:image/webp;base64,UklGRsQFAABXRUJQVlA4ILgFAADwMACdASoTARMBPp1OpEylpCOipBE4qLATiWdu/Hxf2emRYcUqnjqSJUlOLc8Vs0H1p7h1xG3YjENoP2MymwifJH/KmLg9J/++ZD+O314T1p/QzCGYQzCGYQrR9lL00q4vjtUlQMlUKm8IZhDL/VZca9CKaKOqXSfeC7p8ftvjDQM8lua+EfWcU/eMSnid4O/WBHGLf/fX/JuZKF8AnJg6W3+zfzdKF/d26WQ42/gKXuSKd/p+MyUMo+81lQcA0zL8QS9K8YEh4uyFkDPspCELUMSPdD1vgir3UbgE64EjWcJ571sjW95O132oPaw4v10OMmLwVBslX/z+aFGxWDa7LzGhANAnswQDRXKPKoyGDG3/06U054QjfiA4KO/LMdxjucKdSDkhjd+ygzybjHcWvLH34Dt1L6O5F5f0L+hUot4DTESlHQCs2TUtWA9DKboE0zUhxjJwUiC5GLw0ZN1QPfIHWs+CobquO/EkPAPsNqkqrZ9X6dcPA3QDgweAEA2g1BL1mSj4QAdSs/46O2EAAP7tP35HBB1a3yaRoTqUI+hFfOm8b6i9FBYHxnO0ITDPk40N4xyoT2P/mjg1taafUVP5lo5Be2mRGXaxbhOm05z7G7pNdcqqZ4MY4CzBZbE18hNNm8ei9QziKgDBLoaV/Y+KB98XiaGLVkXnXH7m3dxr7Goo4+otjF4fEGCt7SoXMmOSsMVYb+h/hY/D02VAAet8T0Odj9QwMFE023Xtkdr9UWJIwjM0Ev4eHp8gFXsz/zTe/pJV9PETC7lmS2+xI5HaliV766olZXu8RlYDaRxWd1QZYJf63QI5s9DGlA49BqHB1Udwck6JVgoi9ikIchaK6qOrWWhu4vK9ZMP83bhdM2KSt9CxCA7WiAq+shA0g59i/+W8+nNiO6mUSDHSbzQz8eAT1kjXUpVgstWr0QrsGVHrqV2fyXsHD482g/Mq3P3g+jM/fL6/yECsMVTGAEUwnKqshUd0/7sdxI3aMI6s8RS9ejAg/rLSfsSWRpp+naH+2NAPMrMB1cu/qDuqdLzjJw3GSYC4yClS/RQAqKBzTyFBL+6epvJP2W9oTFAY3PspPy/r2pXmfI/OVZ+AHgGAu3oOGncT5Vk3uDqAPZRAQfDlux1QP858f13RJA1YxYM9PwWnFeYhHGKDwIdEXoRukCt7Yhs6B9zgFAc/FrnM/FFPH2HM0Qo/9KSKkadyftERixessw0VD06Ng7w4yzFd6fc4hkQ0tTBHC/nlaq5+rnHe1UEy1MtWTmXYMy5Lo85CbsoS74+PRCy9UF0901DBHNtMqFrAbuukTGBddWhPE8Bff26eq5R5PXyU8msiwk+CMJuzdi+IDqF5doLqvaJApTKWhoaSottuTfF4McHWFh+ARyZCvrNAlKdiJmiHqZuH+AgrlzfwCOa92z++MNvLocsLul79UJ/GDYXcgBmkHOKzyG/CegnBoT7GynqsOA2QpC8LKcNNOOCikBlOULKTU+7qLXmfQDzhjIpPC1MdkYtvnUxx+mK/WHc3Ge6Reoq7dLci3rtyUbUzyejzAMBemTH1GAsZuYa6D17wpE2I88Zp6u62gTs1oehWc8mnAAK9979HcR9JfvwLQV9K4aGSghQQjLQgRIOycIXBjBuQJ5hGAGmX4agUwBu15uaJWdwURy/RQkbCPFAsXCf3amJJwn1q3azp62ITvBzaTet6PMKe8QhYH9htIyxYv8xJ5jEV0xGUofrkPQwIicGqdyH10vbIJ3b0JufGBn3f99v8GbYTqlR0u3yHYgi+EIeJXAR2Nb8is0fkMy9kpksIiw/0UFhOCWnOU5ft28Dy4zvrk4QDjjlReDVLXT1TLiUu/+p8sX4cPNoWouDPKqh4F49BSzrCzepeAcNuj3ByIypXkGpf/GCWZiXJ1R1Czwa3fEATmgScznfvyyB62GDZSJ6QrvuFMAA="
+                        alt=""
+                        class="img-profile" />
+                </label>
+                <input type="file" id="img" hidden accept="image/*" required/>
+            </div>
+            <div class="form-group">
+                <label for="" class="label-form">Communication Preferences</label>
+                <label class="label-form">
+                    <input type="checkbox" value="gender" />
+                    Subscribe to Newsletter
+                </label>
+                <label class="label-form">
+                    <input type="checkbox" value="gender" />
+                    Receive Promotional Emails
+                </label>
+                <label class="label-form">
+                    <input type="checkbox" value="gender" />
+                    Get Product Updates
+                </label>
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
     </body>
 </html>

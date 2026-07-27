@@ -1,6 +1,7 @@
 /* CV */
 * {
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 #main {
     background-color: grey;
@@ -10,7 +11,7 @@
     width: 900px;
     height: 673px;
     background: white;
-    margin: 20px auto 0px;
+    margin: 25px auto 0px;
     overflow: hidden;
     padding: 30px 50px;
 }
@@ -76,7 +77,7 @@
     font-weight: normal;
 }
 /* MENU */
-body {
+#menu {
     background-image: url(https://wallpapers.com/images/featured/blue-color-background-9u7nhq72leu6xf5w.jpg);
 }
 .nav ul {
@@ -106,6 +107,7 @@ body {
 .nav ul li a:hover {
     color: black;
     background: white;
+    border: 1px solid black;
 }
 
 #submenu {
@@ -131,3 +133,73 @@ body {
     border-top: 2px solid grey;
 }
 /* Form */
+#register-body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-register {
+    background: #fff;
+    max-width: 350px;
+    margin: 20px auto 0;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+}
+#form-header {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+.form-group {
+        line-height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+.img-profile {
+    margin-top: 8px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+.label-form {
+    display: block;
+    line-height: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+/* Button */
+.btn {
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: lightblue;
+}
+.btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* Form */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"]
+ {
+    width: 100%;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+input:focus {
+        background: rgb(217, 213, 213);
+        outline:none;
+}
